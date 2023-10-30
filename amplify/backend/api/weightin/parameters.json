@@ -1,0 +1,11 @@
+{
+  "AppSyncApiName": "weightin",
+  "DynamoDBBillingMode": "PAY_PER_REQUEST",
+  "DynamoDBEnableServerSideEncryption": false,
+  "AuthCognitoUserPoolId": {
+    "Fn::GetAtt": [
+      "authweightina012b674",
+      "Outputs.UserPoolId"
+    ]
+  }
+}
