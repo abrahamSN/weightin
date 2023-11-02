@@ -1,19 +1,19 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-weightin-dev-03635-authRole",
-      "UnauthRoleArn": "arn:aws:iam::958405323031:role/amplify-weightin-dev-03635-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::958405323031:role/amplify-weightin-dev-03635-authRole",
+      "AuthRoleName": "amplify-weightin-dev-220705-authRole",
+      "UnauthRoleArn": "arn:aws:iam::958405323031:role/amplify-weightin-dev-220705-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::958405323031:role/amplify-weightin-dev-220705-authRole",
       "Region": "ap-southeast-1",
-      "DeploymentBucketName": "amplify-weightin-dev-03635-deployment",
-      "UnauthRoleName": "amplify-weightin-dev-03635-unauthRole",
-      "StackName": "amplify-weightin-dev-03635",
-      "StackId": "arn:aws:cloudformation:ap-southeast-1:958405323031:stack/amplify-weightin-dev-03635/e0d6c1c0-774a-11ee-9165-0ad387425108",
-      "AmplifyAppId": "d3ud130h9xeps3"
+      "DeploymentBucketName": "amplify-weightin-dev-220705-deployment",
+      "UnauthRoleName": "amplify-weightin-dev-220705-unauthRole",
+      "StackName": "amplify-weightin-dev-220705",
+      "StackId": "arn:aws:cloudformation:ap-southeast-1:958405323031:stack/amplify-weightin-dev-220705/530171e0-78c8-11ee-9b53-0ae986e6643e",
+      "AmplifyAppId": "d1xy9j2yfvhl9s"
     },
     "categories": {
       "auth": {
-        "weightina012b674": {}
+        "weightind81e403a": {}
       },
       "api": {
         "weightin": {}

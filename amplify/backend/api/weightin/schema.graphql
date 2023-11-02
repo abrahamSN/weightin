@@ -1,13 +1,14 @@
 # This "input" configures a global authorization rule to enable public access to
 # all models in this schema. Learn more about authorization rules here: https://docs.amplify.aws/cli/graphql/authorization-rules
-input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
+# input AMPLIFY { globalAuthRule: AuthRule = { allow: public } } # FOR TESTING ONLY!
 
-type WeightEntity @model @auth(rules: [{ allow: owner }]) {
-  id: ID!
-  weight: Float!
+type WeightEntry @model @auth(rules: [{ allow: owner }]) {
+    id: ID!
+    weight: Float!
+    date: String!
 }
 
-type WeightGoalEntity @model @auth(rules: [{ allow: owner }]) {
-  id: ID!
-  weightGoal: Float!
+type WeightGoalEntry @model @auth(rules: [{ allow: owner }]) {
+    id: ID!
+    weight: Float!
 }

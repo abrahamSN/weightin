@@ -9,6 +9,7 @@ import './models/ModelProvider.dart';
 import './src/app.dart';
 
 void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
   await _configureAmplify();
   runApp(const App());
 }
