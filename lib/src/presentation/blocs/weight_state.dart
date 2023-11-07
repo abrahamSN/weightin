@@ -10,4 +10,6 @@ sealed class WeightState with _$WeightState {
   const factory WeightState.error({
     required Object error,
   }) = _Error;
+  const factory WeightState.initialAction() = _InitialAction;
+  const factory WeightState.successAction() = _SuccessAction;
 }

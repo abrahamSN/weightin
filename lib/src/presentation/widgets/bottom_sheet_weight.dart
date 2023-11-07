@@ -4,7 +4,7 @@ bottomSheetWeight(context) {
   showModalBottomSheet(
     context: context,
     builder: (context) {
-      return Column(
+      return const Column(
         children: [
           Text('pilih weights'),
           Text('pilih tanggal'),

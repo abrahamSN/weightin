@@ -1,1 +1,1 @@
-enum NAVBAR_ITEM { static, history, account }
+enum NAVBARITEM { static, history, account }

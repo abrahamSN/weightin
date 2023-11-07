@@ -1,3 +1,4 @@
+import 'package:amplify_flutter/amplify_flutter.dart';
 import 'package:weightin/models/WeightEntry.dart';
 
 import 'package:weightin/src/data/datasources/weight_remote_datasource.dart';
@@ -12,9 +13,12 @@ class WeightRepositoryImpl implements WeightRepository {
   });
 
   @override
-  Future<void> deleteWeight(WeightEntry weightEntry) {
-    // TODO: implement deleteWeight
-    throw UnimplementedError();
+  Future<void> deleteWeight(WeightEntry weightEntry) async {
+    try {
+      await remoteDatasource.deleteWeight(weightEntry);
+    } catch (err) {
+      safePrint("Could not delete weight: $err");
+    }
   }
 
   @override
@@ -25,7 +29,7 @@ class WeightRepositoryImpl implements WeightRepository {
       final res = await remoteDatasource.getWeights();
       items = res;
     } catch (err) {
-      print("Could not query DataStore: $err");
+      safePrint("Could not query DataStore: $err");
     }
 
     return items;
@@ -36,13 +40,16 @@ class WeightRepositoryImpl implements WeightRepository {
     try {
       return await remoteDatasource.saveWeight(weightEntry);
     } catch (e) {
-      print('Error saving weight: $e');
+      safePrint('Error saving weight: $e');
     }
   }
 
   @override
-  Future<void> updateWeight(WeightEntry weightEntry) {
-    // TODO: implement updateWeight
-    throw UnimplementedError();
+  Future<void> updateWeight(WeightEntry weightEntry) async {
+    try {
+      return await remoteDatasource.updateWeight(weightEntry);
+    } catch (err) {
+      safePrint("Could not update weight: $err");
+    }
   }
 }

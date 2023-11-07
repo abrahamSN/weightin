@@ -22,6 +22,8 @@ mixin _$WeightState {
     required TResult Function() loading,
     required TResult Function(List<WeightEntry?>? weights) loaded,
     required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -30,6 +32,8 @@ mixin _$WeightState {
     TResult? Function()? loading,
     TResult? Function(List<WeightEntry?>? weights)? loaded,
     TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -38,6 +42,8 @@ mixin _$WeightState {
     TResult Function()? loading,
     TResult Function(List<WeightEntry?>? weights)? loaded,
     TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -47,6 +53,8 @@ mixin _$WeightState {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -55,6 +63,8 @@ mixin _$WeightState {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
   }) =>
       throw _privateConstructorUsedError;
   @optionalTypeArgs
@@ -63,6 +73,8 @@ mixin _$WeightState {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
     required TResult orElse(),
   }) =>
       throw _privateConstructorUsedError;
@@ -128,6 +140,8 @@ class _$InitialImpl implements _Initial {
     required TResult Function() loading,
     required TResult Function(List<WeightEntry?>? weights) loaded,
     required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
   }) {
     return initial();
   }
@@ -139,6 +153,8 @@ class _$InitialImpl implements _Initial {
     TResult? Function()? loading,
     TResult? Function(List<WeightEntry?>? weights)? loaded,
     TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
   }) {
     return initial?.call();
   }
@@ -150,6 +166,8 @@ class _$InitialImpl implements _Initial {
     TResult Function()? loading,
     TResult Function(List<WeightEntry?>? weights)? loaded,
     TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -165,6 +183,8 @@ class _$InitialImpl implements _Initial {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
   }) {
     return initial(this);
   }
@@ -176,6 +196,8 @@ class _$InitialImpl implements _Initial {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
   }) {
     return initial?.call(this);
   }
@@ -187,6 +209,8 @@ class _$InitialImpl implements _Initial {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
     required TResult orElse(),
   }) {
     if (initial != null) {
@@ -242,6 +266,8 @@ class _$LoadingImpl implements _Loading {
     required TResult Function() loading,
     required TResult Function(List<WeightEntry?>? weights) loaded,
     required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
   }) {
     return loading();
   }
@@ -253,6 +279,8 @@ class _$LoadingImpl implements _Loading {
     TResult? Function()? loading,
     TResult? Function(List<WeightEntry?>? weights)? loaded,
     TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
   }) {
     return loading?.call();
   }
@@ -264,6 +292,8 @@ class _$LoadingImpl implements _Loading {
     TResult Function()? loading,
     TResult Function(List<WeightEntry?>? weights)? loaded,
     TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -279,6 +309,8 @@ class _$LoadingImpl implements _Loading {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
   }) {
     return loading(this);
   }
@@ -290,6 +322,8 @@ class _$LoadingImpl implements _Loading {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
   }) {
     return loading?.call(this);
   }
@@ -301,6 +335,8 @@ class _$LoadingImpl implements _Loading {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
     required TResult orElse(),
   }) {
     if (loading != null) {
@@ -391,6 +427,8 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function() loading,
     required TResult Function(List<WeightEntry?>? weights) loaded,
     required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
   }) {
     return loaded(weights);
   }
@@ -402,6 +440,8 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function()? loading,
     TResult? Function(List<WeightEntry?>? weights)? loaded,
     TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
   }) {
     return loaded?.call(weights);
   }
@@ -413,6 +453,8 @@ class _$LoadedImpl implements _Loaded {
     TResult Function()? loading,
     TResult Function(List<WeightEntry?>? weights)? loaded,
     TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -428,6 +470,8 @@ class _$LoadedImpl implements _Loaded {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
   }) {
     return loaded(this);
   }
@@ -439,6 +483,8 @@ class _$LoadedImpl implements _Loaded {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
   }) {
     return loaded?.call(this);
   }
@@ -450,6 +496,8 @@ class _$LoadedImpl implements _Loaded {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
     required TResult orElse(),
   }) {
     if (loaded != null) {
@@ -535,6 +583,8 @@ class _$ErrorImpl implements _Error {
     required TResult Function() loading,
     required TResult Function(List<WeightEntry?>? weights) loaded,
     required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
   }) {
     return error(this.error);
   }
@@ -546,6 +596,8 @@ class _$ErrorImpl implements _Error {
     TResult? Function()? loading,
     TResult? Function(List<WeightEntry?>? weights)? loaded,
     TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
   }) {
     return error?.call(this.error);
   }
@@ -557,6 +609,8 @@ class _$ErrorImpl implements _Error {
     TResult Function()? loading,
     TResult Function(List<WeightEntry?>? weights)? loaded,
     TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -572,6 +626,8 @@ class _$ErrorImpl implements _Error {
     required TResult Function(_Loading value) loading,
     required TResult Function(_Loaded value) loaded,
     required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
   }) {
     return error(this);
   }
@@ -583,6 +639,8 @@ class _$ErrorImpl implements _Error {
     TResult? Function(_Loading value)? loading,
     TResult? Function(_Loaded value)? loaded,
     TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
   }) {
     return error?.call(this);
   }
@@ -594,6 +652,8 @@ class _$ErrorImpl implements _Error {
     TResult Function(_Loading value)? loading,
     TResult Function(_Loaded value)? loaded,
     TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
     required TResult orElse(),
   }) {
     if (error != null) {
@@ -610,4 +670,256 @@ abstract class _Error implements WeightState {
   @JsonKey(ignore: true)
   _$$ErrorImplCopyWith<_$ErrorImpl> get copyWith =>
       throw _privateConstructorUsedError;
+}
+
+/// @nodoc
+abstract class _$$InitialActionImplCopyWith<$Res> {
+  factory _$$InitialActionImplCopyWith(
+          _$InitialActionImpl value, $Res Function(_$InitialActionImpl) then) =
+      __$$InitialActionImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$InitialActionImplCopyWithImpl<$Res>
+    extends _$WeightStateCopyWithImpl<$Res, _$InitialActionImpl>
+    implements _$$InitialActionImplCopyWith<$Res> {
+  __$$InitialActionImplCopyWithImpl(
+      _$InitialActionImpl _value, $Res Function(_$InitialActionImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$InitialActionImpl implements _InitialAction {
+  const _$InitialActionImpl();
+
+  @override
+  String toString() {
+    return 'WeightState.initialAction()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$InitialActionImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<WeightEntry?>? weights) loaded,
+    required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
+  }) {
+    return initialAction();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<WeightEntry?>? weights)? loaded,
+    TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
+  }) {
+    return initialAction?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<WeightEntry?>? weights)? loaded,
+    TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
+    required TResult orElse(),
+  }) {
+    if (initialAction != null) {
+      return initialAction();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
+  }) {
+    return initialAction(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
+  }) {
+    return initialAction?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
+    required TResult orElse(),
+  }) {
+    if (initialAction != null) {
+      return initialAction(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _InitialAction implements WeightState {
+  const factory _InitialAction() = _$InitialActionImpl;
+}
+
+/// @nodoc
+abstract class _$$SuccessActionImplCopyWith<$Res> {
+  factory _$$SuccessActionImplCopyWith(
+          _$SuccessActionImpl value, $Res Function(_$SuccessActionImpl) then) =
+      __$$SuccessActionImplCopyWithImpl<$Res>;
+}
+
+/// @nodoc
+class __$$SuccessActionImplCopyWithImpl<$Res>
+    extends _$WeightStateCopyWithImpl<$Res, _$SuccessActionImpl>
+    implements _$$SuccessActionImplCopyWith<$Res> {
+  __$$SuccessActionImplCopyWithImpl(
+      _$SuccessActionImpl _value, $Res Function(_$SuccessActionImpl) _then)
+      : super(_value, _then);
+}
+
+/// @nodoc
+
+class _$SuccessActionImpl implements _SuccessAction {
+  const _$SuccessActionImpl();
+
+  @override
+  String toString() {
+    return 'WeightState.successAction()';
+  }
+
+  @override
+  bool operator ==(dynamic other) {
+    return identical(this, other) ||
+        (other.runtimeType == runtimeType && other is _$SuccessActionImpl);
+  }
+
+  @override
+  int get hashCode => runtimeType.hashCode;
+
+  @override
+  @optionalTypeArgs
+  TResult when<TResult extends Object?>({
+    required TResult Function() initial,
+    required TResult Function() loading,
+    required TResult Function(List<WeightEntry?>? weights) loaded,
+    required TResult Function(Object error) error,
+    required TResult Function() initialAction,
+    required TResult Function() successAction,
+  }) {
+    return successAction();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? whenOrNull<TResult extends Object?>({
+    TResult? Function()? initial,
+    TResult? Function()? loading,
+    TResult? Function(List<WeightEntry?>? weights)? loaded,
+    TResult? Function(Object error)? error,
+    TResult? Function()? initialAction,
+    TResult? Function()? successAction,
+  }) {
+    return successAction?.call();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeWhen<TResult extends Object?>({
+    TResult Function()? initial,
+    TResult Function()? loading,
+    TResult Function(List<WeightEntry?>? weights)? loaded,
+    TResult Function(Object error)? error,
+    TResult Function()? initialAction,
+    TResult Function()? successAction,
+    required TResult orElse(),
+  }) {
+    if (successAction != null) {
+      return successAction();
+    }
+    return orElse();
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult map<TResult extends Object?>({
+    required TResult Function(_Initial value) initial,
+    required TResult Function(_Loading value) loading,
+    required TResult Function(_Loaded value) loaded,
+    required TResult Function(_Error value) error,
+    required TResult Function(_InitialAction value) initialAction,
+    required TResult Function(_SuccessAction value) successAction,
+  }) {
+    return successAction(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult? mapOrNull<TResult extends Object?>({
+    TResult? Function(_Initial value)? initial,
+    TResult? Function(_Loading value)? loading,
+    TResult? Function(_Loaded value)? loaded,
+    TResult? Function(_Error value)? error,
+    TResult? Function(_InitialAction value)? initialAction,
+    TResult? Function(_SuccessAction value)? successAction,
+  }) {
+    return successAction?.call(this);
+  }
+
+  @override
+  @optionalTypeArgs
+  TResult maybeMap<TResult extends Object?>({
+    TResult Function(_Initial value)? initial,
+    TResult Function(_Loading value)? loading,
+    TResult Function(_Loaded value)? loaded,
+    TResult Function(_Error value)? error,
+    TResult Function(_InitialAction value)? initialAction,
+    TResult Function(_SuccessAction value)? successAction,
+    required TResult orElse(),
+  }) {
+    if (successAction != null) {
+      return successAction(this);
+    }
+    return orElse();
+  }
+}
+
+abstract class _SuccessAction implements WeightState {
+  const factory _SuccessAction() = _$SuccessActionImpl;
 }

@@ -11,9 +11,9 @@ GoRouter routerConfig = GoRouter(
       builder: (context, state) => const MainScreen(),
     ),
     GoRoute(
-      name: 'manage-weight',
-      path: '/manage-weight',
-      builder: (context, state) => const ManageWeightScreen(),
+      name: 'add-edit-weight',
+      path: '/add-edit-weight',
+      builder: (context, state) => const AddEditWeightScreen(),
     ),
   ],
 );

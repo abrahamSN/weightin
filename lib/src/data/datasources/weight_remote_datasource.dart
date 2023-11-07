@@ -43,12 +43,7 @@ class WeightRemoteDatasourceImpl implements WeightRemoteDatasource {
   @override
   Future<void> updateWeight(WeightEntry weightEntry) async {
     try {
-      final updateEntry = weightEntry.copyWith(
-        date: weightEntry.date,
-        weight: weightEntry.weight,
-      );
-
-      final req = ModelMutations.update<WeightEntry>(updateEntry);
+      final req = ModelMutations.update<WeightEntry>(weightEntry);
       final res = await Amplify.API.mutate(request: req).response;
 
       safePrint('Update result: $res');
